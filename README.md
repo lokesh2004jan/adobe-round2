@@ -15,12 +15,13 @@ to user-defined tasks and personas. Developed for Adobe GenAI Hackathon 2025.
 
 ## Docker Images
 
-  docker pull ldawkar558/adobe-round1
-  docker run --rm \
+  docker pull ldawkar558/adobe-round2
+docker run --rm \
   -v $(pwd)/input:/app/input \
   -v $(pwd)/output:/app/output \
   --network none \
-  ldawkar558/adobe-round1
+  ldawkar558/adobe-round2
+
 
 
 ##  Project Structure
