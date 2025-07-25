@@ -12,6 +12,17 @@ to user-defined tasks and personas. Developed for Adobe GenAI Hackathon 2025.
 - **Fast Processing** - Under 60s for 50-page documents
 - **Structured Output** - Clean JSON with page references
 
+
+## Docker Images
+
+  docker pull ldawkar558/adobe-round1
+  docker run --rm \
+  -v $(pwd)/input:/app/input \
+  -v $(pwd)/output:/app/output \
+  --network none \
+  ldawkar558/adobe-round1
+
+
 ##  Project Structure
 ```text
 .
