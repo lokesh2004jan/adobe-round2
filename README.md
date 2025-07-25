@@ -12,12 +12,13 @@ to user-defined tasks and personas. Developed for Adobe GenAI Hackathon 2025.
 - **Fast Processing** - Under 60s for 50-page documents
 - **Structured Output** - Clean JSON with page references
 
-## 📂 Project Structure
+##  Project Structure
+```text
 .
 ├── app/
-│   ├── input/          # Input PDFs (mount point)
-│   ├── output/         # Generated JSON files
-│   └── round2.py         # Core extraction logic           
-├── Dockerfile          # Container configuration
-├── requirements.txt    # Python dependencies
-└── README.md           # Project documentation
+│   ├── input/          # PDF input directory (mount point)
+│   ├── output/         # JSON results directory
+│   └── round2.py         # Core extraction engine
+├── Dockerfile          # Production-grade container setup
+├── requirements.txt    # Pinned dependencies
+└── README.md           # This documentation
