@@ -1,25 +1,23 @@
-# 📄 PDF Outline Extractor  
+# 🔍 Intelligent PDF Section Relevance Analyzer
+
 
 ## 🌟 Overview
-A lightweight Python solution that automatically extracts hierarchical document outlines from PDFs using font-based analysis. Designed for academic/technical documents with 100% offline operation.
+A Dockerized solution that automatically identifies and extracts the most relevant sections from PDF documents based on semantic similarity 
+to user-defined tasks and personas. Developed for Adobe GenAI Hackathon 2025.
 
 ## ✨ Key Features
-| Feature | Description |
-|---------|-------------|
-| 🔍 **Heading Detection** | Identifies H1/H2/H3 via font size analysis |
-| 🏷 **Metadata Extraction** | Captures document title and page numbers |
-| 📦 **Docker Support** | Pre-configured for linux/amd64 environments |
-| ⚡ **Fast Processing** | <10s for 50-page documents |
-| 🚫 **No Internet Required** | Fully offline operation |
+- **Semantic Analysis** - TF-IDF + Cosine Similarity scoring
+- **Persona Adaptation** - Tailors results for researchers, students, etc.
+- **Offline Operation** - No internet connection required
+- **Fast Processing** - Under 60s for 50-page documents
+- **Structured Output** - Clean JSON with page references
 
 ## 📂 Project Structure
-```text
 .
 ├── app/
 │   ├── input/          # Input PDFs (mount point)
 │   ├── output/         # Generated JSON files
-│   └── main.py         # Core extraction logic
-├── tests/              # Test cases (pytest)
+│   └── round2.py         # Core extraction logic           
 ├── Dockerfile          # Container configuration
 ├── requirements.txt    # Python dependencies
 └── README.md           # Project documentation
